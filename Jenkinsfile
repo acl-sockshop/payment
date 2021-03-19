@@ -119,6 +119,7 @@ pipeline {
               currentBuild.result = 'FAILED'
               error "Deployment did not finish before timeout."
             }
+            sleep(10)
           }
         }
 
